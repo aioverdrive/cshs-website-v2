@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    background-color: gray;
+    font-family: 'Exo 2', 'Roboto', sans-serif;
+}
+/* nav related */
+header {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    padding: 1px;
+    margin: 0;
+}
+nav {
+    margin: 0 0 0 auto;
+}
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 25px 20px;
+}
+li a {
+    text-decoration: none;
+    color: ivory;
+}
+li a:hover {
+    text-decoration: underline;
+    color: #9fefff;
+}
+.logo {
+    width: 50px;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+.ending-nav {
+    padding-right: 40px;
+}
+/* fixed width container encompassing all of the home page */
+.fixed-width-container {
+    width: 570px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* typography */
+h1, h2 {
+    text-align: center;
+}
+ h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 4rem;
+}
+/* stopping for now, but gonna figure out how to do the slider thing with a gradient (shock) */
+.hero-title {
+    padding: 250px 0 350px 0;
+    font-size: 5rem;
+    margin: 0;
+}
+.fancy {
+    display: block;
+    font-size: 5.5rem;
+    font-style: italic;
+    line-height: 30px;
+    background: -webkit-linear-gradient(#b2f5ff, #3189c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* other bg is #0ca096 */
+/* hero section */
+.side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  #left-side {
+    background-color: #064b7f;
+    width: 60%;
+    z-index: 2;
+  }
+  #left-side .fancy {
+    color: red;
+  }
+  
+  #right-side {
+    background-color: #0ca096;
+  }
+  
+  #right-side .hero-title {
+    color: ivory;
+  }
+  
+  #right-side .fancy {
+    color: pink;
+  }
+/* utility */
+.border-blue {
+    border: solid blue;
+}
