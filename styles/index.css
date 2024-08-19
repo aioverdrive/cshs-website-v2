@@ -64,7 +64,7 @@ h1, h2 {
 /* hero section */
 .hero {
     position: relative;
-    height: 100vh;
+    height: 80vh;
 }
 .hero-wrapper {
     position: relative;
@@ -87,18 +87,19 @@ h1, h2 {
   }
   #left-side {
     background-color: #064b7f;
-    height: 100vh;
+    height: 80vh;
     z-index: 2;
   }
   #left-side .fancy {
     background: -webkit-linear-gradient(in lch, #b2f5ff, #3189c5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 6px 1px 10px rgba(255,255,240,0.15);
   }
   
   #right-side {
     background-color: #0ca096;
-    height: 100vh;
+    height: 80vh;
   }
   
   #right-side .hero-title {
@@ -110,6 +111,7 @@ h1, h2 {
     background: -webkit-linear-gradient(in lch, #0ca096, #FF69B4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
+    text-shadow: -6px 1px 10px rgba(255,255,240,0.15);
   }
   /* about clubs */
   
