@@ -6,7 +6,7 @@ html, body {
 /* nav related */
 header {
     display: flex;
-    background-color: black;
+    background-color: #1B1212;
     align-items: center;
     padding: 1px;
     margin: 0;
@@ -50,51 +50,69 @@ h1, h2 {
     text-align: center;
     font-size: 4rem;
 }
-/* stopping for now, but gonna figure out how to do the slider thing with a gradient (shock) */
-.hero-title {
-    padding: 250px 0 350px 0;
-    font-size: 5rem;
-    margin: 0;
-}
-.fancy {
+.side .fancy {
     display: block;
-    font-size: 5.5rem;
+    font-size: 12vw;
     font-style: italic;
-    line-height: 30px;
-    background: -webkit-linear-gradient(#b2f5ff, #3189c5);
+    background: -webkit-linear-gradient(in lch, #b2f5ff, #3189c5);
+    /* random webkit gradient boilerplate that must be repeated */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 /* other bg is #0ca096 */
 /* hero section */
+.hero {
+    position: relative;
+    height: 100vh;
+}
+.hero-wrapper {
+    position: relative;
+    display: flex;
+}
 .side {
     display: grid;
-    height: 100vh;
     overflow: hidden;
     place-items: center;
     position: absolute;
     width: 100%;
+    flex: 1;
+  }
+  .side .hero-title {
+    font-size: 10vw;
+    margin: 0 15vw;
+    width: 70vw;
+    text-shadow: 5px 1px 6px #5ad5fe;
+    color: #1B1212;
   }
   #left-side {
     background-color: #064b7f;
-    width: 60%;
+    height: 100vh;
     z-index: 2;
   }
   #left-side .fancy {
-    color: red;
+    background: -webkit-linear-gradient(in lch, #b2f5ff, #3189c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   #right-side {
     background-color: #0ca096;
+    height: 100vh;
   }
   
   #right-side .hero-title {
     color: ivory;
+    text-shadow: -5px 1px 6px #5ad5fe;
   }
   
   #right-side .fancy {
-    color: pink;
+    background: -webkit-linear-gradient(in lch, #0ca096, #FF69B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
   }
+  /* about clubs */
+  
 /* utility */
 .border-blue {
     border: solid blue;
