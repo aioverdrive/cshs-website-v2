@@ -1,12 +1,20 @@
 html, body {
     margin: 0;
-    background-color: gray;
+    background-color: #CAF0F8;
+    color: #03045E;
     font-family: 'Exo 2', 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+/* general styles */
+section {
+  padding: 8vh 0;
+}
+.darker {
+  background-color: #00B4D8;
 }
 /* nav related */
 header {
     display: flex;
-    background-color: #1B1212;
     align-items: center;
     padding: 1px;
     margin: 0;
@@ -21,11 +29,12 @@ ul li {
 }
 li a {
     text-decoration: none;
-    color: ivory;
+    /* must be repeated to override user agent */
+    color: #03045E;
 }
 li a:hover {
     text-decoration: underline;
-    color: #9fefff;
+    color: #0077B6;
 }
 .logo {
     width: 50px;
@@ -37,17 +46,18 @@ li a:hover {
 }
 /* fixed width container encompassing all of the home page */
 .fixed-width-container {
-    width: 570px;
-    text-align: center;
+    width: 80vw;
     margin: 0 auto;
 }
 /* typography */
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
+    margin: 0;
+}
+img, p {
+  text-align: center;
 }
  h1 {
-    margin: 0;
-    text-align: center;
     font-size: 4rem;
 }
 .side .fancy {
@@ -65,6 +75,8 @@ h1, h2 {
 .hero {
     position: relative;
     height: 80vh;
+    /* override default section padding */
+    padding: 0; 
 }
 .hero-wrapper {
     position: relative;
@@ -83,10 +95,10 @@ h1, h2 {
     margin: 0 15vw;
     width: 70vw;
     text-shadow: 5px 1px 6px #5ad5fe;
-    color: #1B1212;
+    color: #CAF0F8;
   }
   #left-side {
-    background-color: #064b7f;
+    background-color: #03045E;
     height: 80vh;
     z-index: 2;
   }
@@ -103,7 +115,7 @@ h1, h2 {
   }
   
   #right-side .hero-title {
-    color: ivory;
+    color: #90E0EF;
     text-shadow: -5px 1px 6px #5ad5fe;
   }
   
@@ -114,8 +126,33 @@ h1, h2 {
     text-shadow: -6px 1px 10px rgba(255,255,240,0.15);
   }
   /* about clubs */
-  
+  .clubs-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .club-card {
+    /* for some reason the images dont center without saying text-align center again */
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px;
+    width: 500px;
+    background-color: #90E0EF;
+    box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.4);
+  }
+  .club-card:hover {
+    transform: scale(1.05);
+  }
+  /* testimonials and stats */
+  .testimonials-and-stats-container {
+    display: flex;
+    justify-content: space-around;
+  }
 /* utility */
-.border-blue {
-    border: solid blue;
+.bottom-spacing-big {
+  margin-bottom: 6vh;
+}
+.bottom-spacing-small {
+  margin-bottom: 3vh;
 }
