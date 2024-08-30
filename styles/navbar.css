@@ -1,0 +1,47 @@
+
+html, body {
+    margin: 0;
+    background-color: #CAF0F8;
+    color: #03045E;
+    font-family: 'Exo 2', 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+/* general styles */
+section {
+  padding: 8vh 0;
+}
+.darker {
+  background-color: #00B4D8;
+}
+/* nav related */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    margin: 0;
+}
+nav {
+    margin: 0 0 0 auto;
+}
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 25px 20px;
+}
+li a {
+    text-decoration: none;
+    /* must be repeated to override user agent */
+    color: #03045E;
+}
+li a:hover {
+    text-decoration: underline;
+    color: #0077B6;
+}
+.logo {
+    width: 50px;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+.ending-nav {
+    padding-right: 40px;
+}

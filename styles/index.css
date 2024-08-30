@@ -144,10 +144,9 @@ img, p {
   .club-card:hover {
     transform: scale(1.05);
   }
-  /* testimonials and stats */
-  .testimonials-and-stats-container {
-    display: flex;
-    justify-content: space-around;
+  /* footer */
+  footer {
+    padding: 1px;
   }
 /* utility */
 .bottom-spacing-big {
@@ -155,4 +154,7 @@ img, p {
 }
 .bottom-spacing-small {
   margin-bottom: 3vh;
+}
+.border {
+  border: solid red;
 }
