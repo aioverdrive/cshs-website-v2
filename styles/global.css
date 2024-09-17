@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    background-color: #CAF0F8;
+    color: #03045E;
+    font-family: 'Exo 2', 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+/* general styles */
+section {
+  padding: 8vh 0;
+}
+.darker {
+  background-color: #00B4D8;
+}
+  /* footer */
+  footer {
+    padding: 1px;
+  }
+/* typography */
+h1, h2, h3 {
+    text-align: center;
+    margin: 0;
+}
+img, p {
+  text-align: center;
+}
+ h1 {
+    font-size: 4rem;
+}

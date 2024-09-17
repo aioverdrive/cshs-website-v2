@@ -1,71 +1,17 @@
-html, body {
-    margin: 0;
-    background-color: #CAF0F8;
-    color: #03045E;
-    font-family: 'Exo 2', 'Roboto', sans-serif;
-    line-height: 1.4;
-}
-/* general styles */
-section {
-  padding: 8vh 0;
-}
-.darker {
-  background-color: #00B4D8;
-}
-/* nav related */
-header {
-    display: flex;
-    align-items: center;
-    padding: 1px;
-    margin: 0;
-}
-nav {
-    margin: 0 0 0 auto;
-}
-ul li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 25px 20px;
-}
-li a {
-    text-decoration: none;
-    /* must be repeated to override user agent */
-    color: #03045E;
-}
-li a:hover {
-    text-decoration: underline;
-    color: #0077B6;
-}
-.logo {
-    width: 50px;
-    margin: 0 0 0 20px;
-    cursor: pointer;
-}
-.ending-nav {
-    padding-right: 40px;
-}
+
 /* fixed width container encompassing all of the home page */
 .fixed-width-container {
     width: 80vw;
     margin: 0 auto;
 }
-/* typography */
-h1, h2, h3 {
-    text-align: center;
-    margin: 0;
-}
-img, p {
-  text-align: center;
-}
- h1 {
-    font-size: 4rem;
-}
+/* text styling for hero */
 .side .fancy {
     display: block;
     font-size: 12vw;
     font-style: italic;
     background: -webkit-linear-gradient(in lch, #b2f5ff, #3189c5);
     /* random webkit gradient boilerplate that must be repeated */
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -104,6 +50,7 @@ img, p {
   }
   #left-side .fancy {
     background: -webkit-linear-gradient(in lch, #b2f5ff, #3189c5);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 6px 1px 10px rgba(255,255,240,0.15);
@@ -121,11 +68,25 @@ img, p {
   
   #right-side .fancy {
     background: -webkit-linear-gradient(in lch, #0ca096, #FF69B4);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     text-shadow: -6px 1px 10px rgba(255,255,240,0.15);
   }
   /* about clubs */
+  .introductory-text,
+   .club-card {
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #90E0EF;
+  }
+  .introductory-text {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 0;
+    background-color: rgba(144, 224, 239, 0.25);
+    text-shadow: 1px 1px 1px 0077B6;
+  }
   .clubs-container {
     display: flex;
     justify-content: space-around;
@@ -135,18 +96,23 @@ img, p {
   .club-card {
     /* for some reason the images dont center without saying text-align center again */
     text-align: center;
-    border-radius: 12px;
-    padding: 20px;
     width: 500px;
-    background-color: #90E0EF;
     box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 200ms ease-in-out;
   }
   .club-card:hover {
     transform: scale(1.05);
   }
-  /* footer */
-  footer {
-    padding: 1px;
+  /* Testimonial Section */
+  .carousel-container {
+    display: flex;
+  }
+  .carousel {
+    width: 300px;
+    border: solid red;
+  }
+  .carousel img {
+    border-radius: 50%;
   }
 /* utility */
 .bottom-spacing-big {

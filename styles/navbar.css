@@ -1,18 +1,4 @@
 
-html, body {
-    margin: 0;
-    background-color: #CAF0F8;
-    color: #03045E;
-    font-family: 'Exo 2', 'Roboto', sans-serif;
-    line-height: 1.4;
-}
-/* general styles */
-section {
-  padding: 8vh 0;
-}
-.darker {
-  background-color: #00B4D8;
-}
 /* nav related */
 header {
     display: flex;

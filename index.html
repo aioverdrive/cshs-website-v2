@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <title>The Lion's Tech Den</title>
+        <link rel="stylesheet" href="/styles/global.css">
+        <link rel="stylesheet" href="/styles/navbar.css">
         <link rel="stylesheet" href="/styles/index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -41,37 +43,36 @@
                 <!-- ABOUT THE CLUBS -->
                 <section class="about-clubs" id="about-clubs">
                     <div>
-                        <h2>About Us</h2>
                         <div class="fixed-width-container">
-                            <p class="bottom-spacing-big">
-                                Were a diverse group of techies who bring the power of computer science into your high school journey.
+                            <p class="bottom-spacing-big introductory-text">
+                                We are a diverse group of techies who bring the power of computer science into your high school journey.
                                 We foster an environment for creativity, collaboration, and excellence in the computer science
                                 field, no matter your gender, ethnicity, or skill level.
                             </p>
                         </div>
                     </div>
                     <div class="clubs-container">
-                        <div class="club-card">
+                        <div class="club-card" id="cshs">
                             <img src="/images/CSHS_Logo_square_letters.webp" alt="Computer Science Honor Society Logo." class="club-content">
-                            <h3>Computer Science Honor Society</h3>
+                            <h3 class="club-content">Computer Science Honor Society</h3>
                             <p class="club-content">A club for anyone interested in learning to code or to learn more. We have leadership aspects for members that
                                 have a higher skill level/successfully passed high level CS classes to be officially part of the Honor Society.</p>
                         </div>
-                        <div class="club-card">
+                        <div class="club-card" id="gwc">
                             <img src="/images/GWCLogo.webp" alt="Girls Who Code Logo." class="bottom-spacing-small club-content">
-                            <h3>Girls Who Code</h3>
+                            <h3 class="club-content">Girls Who Code</h3>
                             <p class="club-content"> A women exclusive club to foster female computer science talent to tackle the gender disparity in the CS world. They also offer exclusive
                                 scholarships and awards through NCWITT (National Center for Women & Information Technology)!</p>
                         </div>
-                        <div class="club-card">
+                        <div class="club-card" id="skillsusa">
                             <img src="/images/skillsusa.webp" alt="SkillsUSA Logo." class="club-content">
-                            <h3>SkillsUSA</h3>
+                            <h3 class="club-content">SkillsUSA</h3>
                             <p class="club-content">SkillsUSA is a national organization that helps students build job and leadership skills for careers in technical and skilled trades 
                                 through hands-on learning and competitions.</p>
                         </div>
-                        <div class="club-card">
+                        <div class="club-card" id="tsa">
                             <img src="/images/nevadaTSALogo.webp" alt="Nevada Technology Skills Association Logo." class="bottom-spacing-small club-content">
-                            <h3>Technology Skills Association</h3>
+                            <h3 class="club-content">Technology Skills Association</h3>
                             <p class="club-content">TSA is a national organization where students explore and compete in STEM fields, developing skills in areas like 
                                 engineering, technology, and leadership.</p>
                         </div>
@@ -83,15 +84,75 @@
                 <section class="darker">
                         <div class="testimonials-container">
                             <h2>Testimonials</h2>
-                            <p>lorem ipsum</p>
+                            <div class="carousel-container">
+                                <div class="carousel">
+                                    <img src= "/images/twitter.webp" alt="sample logo" class="testimonial-img">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                         culpa qui officia deserunt mollit anim id est laborum.</p>
+                                         <p>Lucas Pinto</p>
+                                </div>
+                                <div class="carousel">
+                                    <img src= "/images/twitter.webp" alt="sample logo" class="testimonial-img">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                         culpa qui officia deserunt mollit anim id est laborum.</p>
+                                         <p>Lucas Pinto</p>
+                                </div>
+                                <div class="carousel">
+                                    <img src= "/images/twitter.webp" alt="sample logo" class="testimonial-img">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                         culpa qui officia deserunt mollit anim id est laborum.</p>
+                                         <p>Lucas Pinto</p>
+                                </div>
+                                <div class="carousel">
+                                    <img src= "/images/twitter.webp" alt="sample logo" class="testimonial-img">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                         culpa qui officia deserunt mollit anim id est laborum.</p>
+                                         <p>Lucas Pinto</p>
+                                </div>
+                                <div class="carousel">
+                                    <img src= "/images/twitter.webp" alt="sample logo" class="testimonial-img">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                         culpa qui officia deserunt mollit anim id est laborum.</p>
+                                         <p>Lucas Pinto</p>
+                                </div>
+                            </div>
                         </div>
                 </section> <!-- /TESTIMONIALS-->
 
 
                 <section> <!-- STATS -->
+                    <!-- Make a cool bar chart maybe? or if im lazuy -->
+                    <h2>Stats</h2>
                     <div class="stats-container">
-                        <h2>Stats</h2>
-                        <p>lorem ipsum</p>
+                        <div class="placeholder-stats-child">
+                            <p>7 gold tsa medals</p>
+                            <p>5 silver tsa medals</p>
+                        </div>
+                        <div class="placeholder-stats-child">
+                            <p>2 gold skillsusa medals</p>
+                            <p>1 silver skillsusa medal</p>
+                            <p>1 bronze skillsusa medal</p>
+                        </div>
                     </div>
                 </section> <!-- /STATS -->
 
@@ -99,7 +160,8 @@
                  <!-- !!! when more fleshed out, swap with test and stats, more attention grabbing (thanks kayla!) -->
                 <section class="darker">
                     <h2 class="bottom-spacing-big">Upcoming Events</h2>
-                    <p>Next Meeting:</p>
+                    <!-- make this huge -->
+                    <p>Next Meeting: <span>September 2nd</span></p>
                 </section> <!-- /UPCOMING -->
 
 
